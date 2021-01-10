@@ -1,0 +1,49 @@
+{% extends 'Classmate/base.html' %}
+{% load static %}
+
+{% block extend %}
+<!-- <h6 style="font-size:130%;align:center; margin-left: 50px; margin-top:70px; color:blue;">Blog Content</h6>  -->
+<div id="blog-myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:100px; width:80%;">
+  <ol class="carousel-indicators" style="width: auto;">
+      <li data-target="#blog-myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="1"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="2"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="3"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="4"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="5"></li>
+      <li data-target="#blog-myCarousel" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'Classmate/images/blog1.png' %}" height="490" width="1135">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog2.png' %}" height="490" width="1135">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog3-.png' %}" height="490" width="1135">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog4.png' %}" height="490" width="1135">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog5.png' %}" height="490" width="1135">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog6.png' %}" height="490" width="1135">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'Classmate/images/blog7.png' %}" height="490" width="1135">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#blog-myCarousel" role="button" data-slide="bx-prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:red; font-size:25px;"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#blog-myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:red; font-size:25px;"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+{% endblock %}

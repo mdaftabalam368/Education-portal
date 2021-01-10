@@ -1,0 +1,15 @@
+{% extends 'Classmate/base.html' %}
+{% load static %}
+
+{% block extend %}
+<div class="bg" style="background-image: url('{% static "Classmate/images/login-bg.jpg" %}');
+                        background-repeat: no-repeat;background-size: 100%;"></div>
+
+        <form method="POST">
+            {% csrf_token %}
+            <h6>Already have an account..Login Here</h6> {{form.as_p}}
+            <button class="btn btn-outline-info" style="background-color:black; color:white;" type="submit">login</button>
+        </form>
+ Don't have an account, <a href="/Register" target="blank" style="color:#35fc03;"><strong>Register Here</strong></a> !!!
+
+{% endblock%}

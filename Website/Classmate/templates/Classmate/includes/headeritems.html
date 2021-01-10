@@ -1,0 +1,9 @@
+
+        <li><a href="/contact" style="margin-top:15px;text-align:right; margin-right:40px;"><i class="fa fa-fw fa-phone"></i>Contact Us</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="/account" style="margin-top:15px;text-align:right; margin-right:80px;"><i class="fa fa-fw fa-user"></i>{{user.username|title}}</a></li>
+        <li><a href="/logout" style="margin-top:15px; margin-right:40px; text-align:right;"><i class="fa fa-fw fa-sign-out"></i>Sign out</a></li>
+        {% else %}
+        <li><a href="/Register" style="margin-top:15px;text-align:right; margin-right:25px;"><i class="fa fa-fw fa-sign-in"></i>Register</a></li>
+        <li><a href="/Login" style="margin-top:15px; margin-right:0px; text-align:right;"><i class="fa fa-fw fa-sign-in"></i>Sign in</a></li>
+        {% endif %}

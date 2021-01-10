@@ -1,0 +1,64 @@
+{% extends 'Classmate/base.html' %}
+{% load static %}
+
+{% block extend %}
+<!--for print the course name of selected course type -->
+<div class="about-container" style="position:absolute;font-size:15px; background-color:white; width:80%; margin-left:130px;
+margin-top:70px;text-align:center; float:right; height:70%; z-index:-1;">
+<h1 style="font-size:150%; font-family:arial; font-weight:bold; margin-top:2px;">
+    <br/>
+    {% if course.pk is 1 %}
+Course Name :  {{ course.Course_name }}
+
+{% elif course.pk is 2 %}
+Course Name :  {{ course.Course_name }}
+
+{% elif course.pk is 3 %}
+Course Name :  {{ course.Course_name }}
+
+{% else %}
+Course Name :  {{ course.Course_name }}
+
+    {% endif %}</h1>
+
+<!--for print the choice of selected course type -->
+<h2 style="font-size:120%; font-family:arial; font-weight:bold;margin-top:0px;line-height:0;">
+    {% if 'choice' in request.POST %}
+    ({{ request.POST.choice }})
+    {% endif %}
+    </h2>
+    {% if request.POST.choice == 'Self-Paced'%}<br/><br/>
+    <p>How Self-Paced Learning Can Enhance The Learning Experience Of Employees, Customers And Channel Partners</p>
+        <br/><br/>
+<div class="self-container"style=" margin-left:350px; position: absolute;">
+   <ul>
+        <li>Convenience.</li>
+        <li>Cost effectiveness.</li>
+        <li>Suited for all types of learning styles/needs.</li>
+        <li>No scheduling issues.</li>
+        <li>Helps in building a solid base.</li>
+        <li>Improves ownership.</li>
+        <li>Greater focus.</li>
+        <li>Good for permanent content.</li>
+   </ul>
+    {% elif request.POST.choice == 'Instructor Led'%}<br/><br/>
+    <p>Decide for yourself if Face-to-Face, Instructor-Led Training is the right choice for you</p>
+    <br/><br/>
+    <div class="self-container"style=" margin-left:350px; position: absolute;">
+    <ul>
+        <li>Focus.</li>
+        <li>Completion.</li>
+        <li>Confidentiality.</li>
+        <li>Better Return on Investment.</li>
+        <li>Practice.</li>
+        <li>Adaptability.</li>
+        <li>Individual Attention to Participant Needs.</li>
+        <li>Learning From Other Participants.</li>
+        <li>Building Personal Relationships</li>
+   </ul>
+    </div>
+
+</div>
+
+    {% endif %}
+{% endblock %}

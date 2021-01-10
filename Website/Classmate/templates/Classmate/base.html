@@ -1,0 +1,261 @@
+
+{% load static %}
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>E-Education Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+   body{
+        font-family:arial;
+        margin: 0px;
+        padding: 0px;
+        background-color:#cbd1f5;
+        overflow: none;
+        font-size:20px;
+        font-weight:bold;
+        color:black;
+          }
+
+   .header ul{
+         width: 100%;
+         height:12%;
+         background-color:#2065a1;
+         position:absolute;
+         overflow: none;
+         list-style:none;
+         float:left;
+         align:left;
+         paddind:0px;
+         top:0px;
+   }
+   .header ul li{
+          float: right;
+          text-align: center;
+          width: 180px;
+          height:40px;
+          line-height:40px;
+          position:relative;
+          border-radius:20px;
+          margin-right:5px;
+          }
+   .header ul li a {
+          text-decoration:none;
+          display:block;
+          color: white;
+          font-weight:bold;
+          font-family: helvitica;
+          font-size: 18px;
+              }
+   .header ul li a:hover {
+          color:red;
+                }
+
+   .menu ul{
+         padding:0px 10px;
+         list-style:none;
+         overflow: none;
+         margin-top:65px;
+         float:left;
+         position: relative;
+         z-index:50;
+          }
+   .menu ul li{
+          float: left;
+          text-align: center;
+          Background-color: black;
+          width: 200px;
+          opacity:0.9;
+          line-height:40px;
+          border-radius:20px;
+          margin:2px;
+              }
+     .menu ul li a{
+          color: white;
+          text-decoration:none;
+          display:block;
+          font-family: arial;
+          font-size: 18px;
+          }
+     .menu ul li a:hover{
+          color:red;
+          border-radius:20px;
+     }
+     .menu ul ul{
+          display:none;
+          position:absolute;
+          margin:.5px;
+          padding:0px;
+      }
+     .menu ul li:hover > ul {
+          display: block;
+     }
+     .menu ul ul ul {
+     margin-left:200px;
+     top:0px;
+     }
+    .search {
+       text-align: right;
+       border-radius:18px;
+       float:center;
+       margin-top:28px;
+       padding:25px 10px;
+       }
+   .search input[type=text]{
+      float: left;
+      padding: 15px 10px;
+      margin-top: 45px;
+      margin-left: 105px;
+      border: 3px solid #9595b7;
+      font-size: 15px;
+      font:helvitica;
+      border-radius:18px;
+      width:300px;
+      height:25px;
+      }
+   .search button {
+       text-align: right;
+       float: right;
+       padding: 7.5px;
+       margin-top: 45px;
+       margin-right: 70px;
+       background: white;
+      font-size: 17px;
+      border: 3px solid #9595b7;
+      cursor: pointer;
+      border-radius:25px;
+      }
+    .search button:hover {
+       background: red;
+       border-radius:25px;
+       }
+    @media screen and (max-width: 500px) {
+   .search{
+    float: none;
+     }
+   .search input[type=text] {
+    float: none;
+    display: block;
+  }
+  }
+  .container{
+        position:absolute;
+        left:0;
+        top:0px;
+        width:60%;
+        height:70vh;
+        top:160px;
+        left:260px;
+        align:center;
+        background-size:50%;
+        border:4x solid black;
+        z-index: 30;
+        }
+
+  .carousel-inner{border-radius:50Px;}
+  .carousel-inner > .item > img,
+   .carousel-inner > .item > a > img {
+     width: 100%;
+     height:100%;
+     margin: none;
+     top:50px;
+
+  }
+  .carousel a{border-radius:50Px;}
+  .details{
+  position:absolute;
+  left:43%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  }
+  .details h2{
+  transform: capitalize;
+  color:black;
+  font-size:20px;
+   font-weight:bold;
+  }
+  .details h2 span:nth-child(1){
+     color:white;
+     font-size:20px;
+     font-family:Bauhaus93;
+     font-weight:bold;
+     }
+  .details h2 span:nth-child(2){
+     color:green;
+     font-size:15.5px;
+     font-family:Bauhaus93;
+     font-weight:;
+     }
+
+   </style>
+</head>
+<body>
+
+<div class="header" id="right hide-on-med-and-down">
+    <ul>
+        {% include 'Classmate/includes/headeritems.html' %}
+        <li style="color:white; font-size:25px; font-family:Bauhaus93; margin-left:50px; margin-top:18px; width:40%;
+        float:left; text-align:left;">E-education Portal</li>
+    </ul>
+
+</div>
+
+<div class="menu">
+   <ul>
+        <li><a href="/Home_page"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="/About"><i class="fa fa-fw fa-user"></i>About Us</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-book"></i>Courses<i class="fa fa-fw fa-arrow-down"></i></a>
+             <ul>
+                 <li><a href="#">All-Course<i class="fa fa-fw fa-arrow-right"></i></a>
+                     <ul>
+                         <li><a href="/1">Python</a></li>
+                         <li><a href="/2">Django</a></li>
+                         <li><a href="/3">Java</a></li>
+                         <li><a href="/4">Data Scientist</a></li>
+                         <li><a href="/5">DevOps Engineer</a></li>
+                         <li><a href="/6">PYTHON-DJANGO</a></li>
+                         <li><a href="/7">C</a></li>
+                         <li><a href="/8">.NET</a></li>
+                     </ul>
+                 </li>
+             </ul>
+        </li>
+        <li><a href="/Blog"><i class="fa fa-fw fa-book"></i>Blog</a></li>
+   </ul>
+
+<div class="search">
+        <form method="GET" action="/Search">
+            <input type="text" class="form-control" placeholder="Search.." name="q" id="search">
+            <button type="submit" name="submit" value="Searchposts"><i class="fa fa-fw fa-search"></i>
+            </button>
+        </form>
+</div>
+</div>
+
+         {% include 'Classmate/includes/messaging.html' %}
+</body>
+</html></DOCTYPE>
+{% block extend %}{% endblock %}
+

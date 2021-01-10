@@ -1,0 +1,14 @@
+{% extends 'Classmate/base.html' %}
+{% load static %}
+
+{% block extend %}
+<h2>Register-Page</h2>
+<body class="bg" style="background-color:white; background-image:none; background-size:100%;"></body>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn" style="background-color:yellow; color:blue" type="submit">Register</button>
+</form>
+If you already have an account,<a href="/Login"><strong>Login</strong></a> here !!!.
+{% endblock%}

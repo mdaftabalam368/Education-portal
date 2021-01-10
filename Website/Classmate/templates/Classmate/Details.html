@@ -1,0 +1,124 @@
+{% extends 'Classmate/base.html' %}
+{% load static %}
+
+{% block extend %}
+<!-- Course Details -->
+<div class="container my-3" style="margin-top:0px; position:absolute; top:160; width:80%;left:50;">
+    <!-- Course Id-1 -->
+    {% if course.pk is 1 %}
+    <a><img src="{% static 'Classmate/images/python_img.jpg' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-2 -->
+    {% elif course.pk is 2 %}
+    <a><img src="{% static 'Classmate/images/django-logo-big.jpg' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-3 -->
+    {% elif course.pk is 3 %}
+    <a><img src="{% static 'Classmate/images/j4.png' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-4 -->
+    {% elif course.pk is 4 %}
+    <a><img src="{% static 'Classmate/images/ds.jpg' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-5 -->
+    {% elif course.pk is 5 %}
+    <a><img src="{% static 'Classmate/images/do1.png' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-6 -->
+    {% elif course.pk is 6 %}
+    <a><img src="{% static 'Classmate/images/pd1.jpg' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-7 -->
+    {% elif course.pk is 7 %}
+    <a><img src="{% static 'Classmate/images/c.png' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+    <!-- Course Id-8 -->
+    {% elif course.pk is 8 %}
+    <a><img src="{% static 'Classmate/images/net.jpg' %}" class="circle float-left shadow border radius-200"
+            style="height:250; width:300; border-radius:100px;border:1px solid red; "></a>
+    <div class="row no-gutters rounded flex-md-row h-md-100 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+            <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+            <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+        </div>
+    </div>
+
+{% else %}
+    <strong class="d-inline-block mb-2 text-primary">{{course.Course_name}}</strong>
+    <strong class="d-inline-block mb-2 text-muted">({{course.Courses_id}})</strong>
+    <p class="card-group mb-2" style="font-size:15;">{{course.description}}</p>
+{% endif %}
+
+    <ul>
+        {% for x in Course.set.all %}
+        <li> {{x.Course_type}}</li>
+        {% endfor %}
+    </ul>
+
+<!-- Form for your-choice -->
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>
+{% endif %}
+    <div class="choice_container" style="margin-top:150px; position:absolute; top:140; width:28%;left:10;">
+        <form action="{% url 'Classmate:yourchoice' course.id %}" method="POST">
+            {% csrf_token %}
+            <br/>
+            {% for choice in course.details_set.all %}
+            <input type="radio" class="radio-inline" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.Course_type }}">
+            <label for="choice{{ forloop.counter }}">{{ choice.Course_type }}</label>
+            {% endfor %}
+            <br/>
+            <center> <button type="submit" class="btn btn-primary">Submit</button></center>
+        </form>
+    </div>
+</div>
+{% endblock %}
