@@ -2,13 +2,18 @@
 {% load static %}
 
 {% block extend %}
-<h2>Register-Page</h2>
 <body class="bg" style="background-color:white; background-image:none; background-size:100%;"></body>
-
-<form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button class="btn" style="background-color:yellow; color:blue" type="submit">Register</button>
-</form>
-If you already have an account,<a href="/Login"><strong>Login</strong></a> here !!!.
+<div class="container" style="margin-top:0px; position:absolute; top:130;">
+    <center><h3> <b><u>Register-Here</u></b></h3></center>
+    <div class="row no-gutters border rounded flex-md-row my-4 shadow h-md-200 position-absolute">
+    <form method="POST">
+        {% csrf_token %}
+            {{form.as_p}}
+        <center><button class="btn" style="background-color:green; color:white" type="submit">Register</button></center>
+    </form>
+        <div class="col p-2 d-flex flex-column position-static">
+            <center>If you already have an account,<a href="/Login"><strong>Login</strong></a> here !!!.</center>
+        </div>
+    </div>
+</div>
 {% endblock%}

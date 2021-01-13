@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block extend %}
-<div class="bg" style="background-image: url('{% static "Classmate/images/login-bg.jpg" %}');
-                        background-repeat: no-repeat;background-size: 100%;"></div>
-
-        <form method="POST">
-            {% csrf_token %}
-            <h6>Already have an account..Login Here</h6> {{form.as_p}}
-            <button class="btn btn-outline-info" style="background-color:black; color:white;" type="submit">login</button>
-        </form>
+<body class="bg" style="background-color:white; background-image:none; background-size:100%;"></body>
+<div class="container" style="margin-top:35px; position:absolute; margin-left:10px; height:60%;">
+  <br/>  <center><form method="POST">
+        {% csrf_token %}
+        <h5><b><u>Already have an account..Login Here</u></b></h5><br/>
+        {{form.as_p}}
+    <button class="btn btn-outline-info" type="submit">login</button>
+    </form><br/>
  Don't have an account, <a href="/Register" target="blank" style="color:#35fc03;"><strong>Register Here</strong></a> !!!
-
+    </center></div>
 {% endblock%}

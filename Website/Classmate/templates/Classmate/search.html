@@ -4,11 +4,11 @@
 
 {% if submitbutton == 'Searchposts' and request.GET.q != '' %}
 {% if results %}
-<div class="container" style="margin-top:0px; align:left; position:absolute; z-index:-1;">
+<div class="container" style="margin-top:5px; align:left; position:absolute; z-index:-1;">
 <h5>Results for <b><u>{{ request.GET.q }}</u></b></h5>
  {% for result in results %}
  <div class="row col-gutters border rounded flex-md-row shadow h-md-200 position-relative">
-<div class="col p-4 d-flex flex-column position-static">
+     <div class="col p-4 d-flex flex-column position-static">
    <strong class="d-inline-block mb-2 text-primary">{{ result.Course_name }}</strong>
    <h6 class="mb-0 text-muted"><b>Course Id({{ result.Courses_id }})</b></h6>
    <p class="card-group mb-0">{{ result.description }}</p>
